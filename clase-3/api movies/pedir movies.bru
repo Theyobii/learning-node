@@ -1,0 +1,16 @@
+meta {
+  name: pedir movies
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/movies
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

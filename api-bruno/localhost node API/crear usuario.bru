@@ -1,0 +1,22 @@
+meta {
+  name: crear usuario
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:1234/users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "jonny"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

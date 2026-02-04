@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "localhost node API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

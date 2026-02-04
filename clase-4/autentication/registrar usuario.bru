@@ -1,0 +1,23 @@
+meta {
+  name: registrar usuario
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "jonnydev",
+    "password": "jonnycp"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

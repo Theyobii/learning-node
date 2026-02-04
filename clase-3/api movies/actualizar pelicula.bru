@@ -1,0 +1,22 @@
+meta {
+  name: actualizar pelicula
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "year": 1996
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

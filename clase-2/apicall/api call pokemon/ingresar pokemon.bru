@@ -1,0 +1,26 @@
+meta {
+  name: ingresar pokemon
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:1234/pokemon
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "bulbasaur",
+    "type": "normal",
+    "moves": [
+      "transform"
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

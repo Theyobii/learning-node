@@ -1,0 +1,30 @@
+meta {
+  name: agregar movie
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/movies
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "el grinch",
+    "year": "hola",
+    "director": "raymon",
+    "duration": 175,
+    "rate": 3,
+    "poster": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg",
+    "genre": [
+      "Horror"
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
