@@ -4,9 +4,5 @@ dist/
 .DS_Store
 .vscode/
 coverage/
-<<<<<<< HEAD
-npm-debug.log* 
-=======
 npm-debug.log* 
 api-bruno/
->>>>>>> af7b1b2 (fix:api-logs)
